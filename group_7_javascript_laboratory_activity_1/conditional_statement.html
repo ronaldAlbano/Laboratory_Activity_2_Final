@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Laboratory Activity 1</title>
+    
+</head>
+<body>
+    <h1>Group Seven | Control Flow and Conditional Statements</h1>
+
+    <hr>
+    
+    <div id="output"></div> <!-- Output div to display the JavaScript output -->
+
+    <script>
+        // Control Flow and Conditional Statements
+        var number = 5;
+        var outputDiv = document.getElementById("output"); // Get the output div element
+
+        outputDiv.innerHTML += "<p><b>Conditional Statement knowing if the number is positive or negative Output<b></p>";
+     
+        if (number > 0) {
+          outputDiv.innerHTML += "<p>Number is positive</p>";
+        } else {
+          outputDiv.innerHTML += "<p>Number is negative</p>";
+        }
+     
+        outputDiv.innerHTML += "<p>&nbsp;</p>"; // Add a space
+        outputDiv.innerHTML += "<p><b>Conditional Statement knowing the equivalent grade based on the precentage Output<b></p>";
+
+        var percentage = 85;
+     
+        if (percentage >= 90) {
+          outputDiv.innerHTML += "<p>Grade: A</p>";
+        } else if (percentage >= 80) {
+          outputDiv.innerHTML += "<p>Grade: B</p>";
+        } else if (percentage >= 70) {
+          outputDiv.innerHTML += "<p>Grade: C</p>";
+        } else {
+          outputDiv.innerHTML += "<p>Grade: D</p>";
+        }
+
+        outputDiv.innerHTML += "<p>&nbsp;</p>"; // Add a space
+        outputDiv.innerHTML += "<p><b>Conditional Statement knowing the discount based on the age and if member Output</b></p>";
+     
+        var age = 25;
+        var isMember = true;
+     
+        if (age >= 18) {
+          if (isMember) {
+            outputDiv.innerHTML += "<p>You are eligible for a discount.</p>";
+          } else {
+            outputDiv.innerHTML += "<p>You need to become a member to avail the discount.</p>";
+          }
+        } else {
+          outputDiv.innerHTML += "<p>You must be at least 18 years old to avail the discount.</p>";
+        }
+     </script>
+
+    <div class="center-link">
+        <a href="index.html">
+            <img src="back-button.png" alt="Icon" width="32" height="32"> <!-- Icon with href link -->
+        </a>
+    </div>
+     
+     <footer>
+        <p>&copy; Group Seven. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

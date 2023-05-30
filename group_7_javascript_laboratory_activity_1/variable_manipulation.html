@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Laboratory Activity 1</title>
+    
+
+</head>
+<body>
+    <h1>Group Seven | Variable Manipulation</h1>
+
+    <hr>
+    
+    <div id="output"></div> <!-- Output div to display the JavaScript output -->
+
+
+    <script>
+        // Variable Manipulation
+       
+        var numberVariable = 10;
+        var stringVariable = "Hello, ";
+        var booleanVariable = true;
+
+        var result = numberVariable + 5; // Arithmetic operation
+        var concatenatedString = stringVariable + "World!"; // String concatenation
+        var logicalResult = booleanVariable && (numberVariable > 5); // Logical operation
+
+        // Display the output
+        var outputDiv = document.getElementById("output");
+        outputDiv.innerHTML += "<p><b>Arithmetic operation</b> </p>";
+        outputDiv.innerHTML += "<p>Inputs: 10 + 5 </p>";
+        outputDiv.innerHTML += "<p>Output: " + result + " </p>";
+        outputDiv.innerHTML += "<p>&nbsp;</p>"; // Add a space
+
+        outputDiv.innerHTML += "<p><b>String Concatenation</b> </p>";
+        outputDiv.innerHTML += "<p>Inputs: Hello, + World! </p>";
+        outputDiv.innerHTML += "<p>Output: " + concatenatedString + " </p>";
+        outputDiv.innerHTML += "<p>&nbsp;</p>"; // Add a space
+
+        outputDiv.innerHTML += "<p><b>Logical Operation</b> </p>";
+        outputDiv.innerHTML += "<p>Inputs: true && 10 > 5</p>";
+        outputDiv.innerHTML += "<p>Output: " + logicalResult + " </p>";
+
+
+
+        
+     
+       
+    </script>
+
+    <div class="center-link">
+        <a href="index.html">
+            <img src="back-button.png" alt="Icon" width="32" height="32"> <!-- Icon with href link -->
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; Group Seven. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
